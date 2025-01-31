@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{38C3341B-F984-441D-AA4F-41521CA1B425}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Final_Lab_Project</RootNamespace>
+    <AssemblyName>Final_Lab_Project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.SqlClient.4.9.0\lib\net462\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin_register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_register.Designer.cs">
+      <DependentUpon>admin_register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="apartment house selection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="apartment house selection.Designer.cs">
+      <DependentUpon>apartment house selection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="choice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="choice.Designer.cs">
+      <DependentUpon>choice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="family_members_.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="family_members_.Designer.cs">
+      <DependentUpon>family_members_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home Registration.Designer.cs">
+      <DependentUpon>Home Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jakaria floor select owner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jakaria floor select owner.Designer.cs">
+      <DependentUpon>jakaria floor select owner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jakaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jakaria.Designer.cs">
+      <DependentUpon>jakaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jakaria_admin_dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jakaria_admin_dashboard.Designer.cs">
+      <DependentUpon>jakaria_admin_dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jakaria_chatcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jakaria_chatcs.Designer.cs">
+      <DependentUpon>Jakaria_chatcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jakaria_complaint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jakaria_complaint.Designer.cs">
+      <DependentUpon>Jakaria_complaint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jakaria_complaint_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jakaria_complaint_admin.Designer.cs">
+      <DependentUpon>jakaria_complaint_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jakaria_family.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jakaria_family.Designer.cs">
+      <DependentUpon>Jakaria_family.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jakaria_guest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jakaria_guest.Designer.cs">
+      <DependentUpon>jakaria_guest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jakaria_utiliy_bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jakaria_utiliy_bill.Designer.cs">
+      <DependentUpon>jakaria_utiliy_bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="j_a1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="j_a1.Designer.cs">
+      <DependentUpon>j_a1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="j_b2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="j_b2.Designer.cs">
+      <DependentUpon>j_b2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="j_c3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="j_c3.Designer.cs">
+      <DependentUpon>j_c3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="j_d4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="j_d4.Designer.cs">
+      <DependentUpon>j_d4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="j_e5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="j_e5.Designer.cs">
+      <DependentUpon>j_e5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login Page.Designer.cs">
+      <DependentUpon>Login Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>loginDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="loginDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>loginDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="mahin_guest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mahin_guest.Designer.cs">
+      <DependentUpon>mahin_guest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pramanik floor select owner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pramanik floor select owner.Designer.cs">
+      <DependentUpon>pramanik floor select owner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pramanik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pramanik.Designer.cs">
+      <DependentUpon>pramanik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pramanik_admin_dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pramanik_admin_dashboard.Designer.cs">
+      <DependentUpon>pramanik_admin_dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pramanik_chat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pramanik_chat.Designer.cs">
+      <DependentUpon>pramanik_chat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pramanik_complaint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pramanik_complaint.Designer.cs">
+      <DependentUpon>pramanik_complaint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pramanik_complaint_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pramanik_complaint_admin.Designer.cs">
+      <DependentUpon>pramanik_complaint_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pramanik_family.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pramanik_family.Designer.cs">
+      <DependentUpon>pramanik_family.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pramanik_guest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pramanik_guest.Designer.cs">
+      <DependentUpon>pramanik_guest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pramanik_utiliy_bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pramanik_utiliy_bill.Designer.cs">
+      <DependentUpon>pramanik_utiliy_bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="p_a1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="p_a1.Designer.cs">
+      <DependentUpon>p_a1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="p_b2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="p_b2.Designer.cs">
+      <DependentUpon>p_b2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="p_c3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="p_c3.Designer.cs">
+      <DependentUpon>p_c3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="p_d4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="p_d4.Designer.cs">
+      <DependentUpon>p_d4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="p_e5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="p_e5.Designer.cs">
+      <DependentUpon>p_e5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sarker_admin_dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sarker_admin_dashboard.Designer.cs">
+      <DependentUpon>sarker_admin_dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sarker_admin_utiliti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sarker_admin_utiliti.Designer.cs">
+      <DependentUpon>sarker_admin_utiliti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sarker_chatt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sarker_chatt.Designer.cs">
+      <DependentUpon>sarker_chatt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sarker_complaint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sarker_complaint.Designer.cs">
+      <DependentUpon>sarker_complaint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sarker_complaint_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sarker_complaint_admin.Designer.cs">
+      <DependentUpon>sarker_complaint_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sarker_floor_select_owner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sarker_floor_select_owner.Designer.cs">
+      <DependentUpon>sarker_floor_select_owner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sarker_guest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sarker_guest.Designer.cs">
+      <DependentUpon>sarker_guest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sarker_utiliy_bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sarker_utiliy_bill.Designer.cs">
+      <DependentUpon>sarker_utiliy_bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="selection jakaria admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selection jakaria admin.Designer.cs">
+      <DependentUpon>selection jakaria admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="selection pramanik admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selection pramanik admin.Designer.cs">
+      <DependentUpon>selection pramanik admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="selection_sarker_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selection_sarker_admin.Designer.cs">
+      <DependentUpon>selection_sarker_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="swimming_doing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="swimming_doing.Designer.cs">
+      <DependentUpon>swimming_doing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="swimming_pool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="swimming_pool.Designer.cs">
+      <DependentUpon>swimming_pool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_a1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_a1.Designer.cs">
+      <DependentUpon>s_a1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_b2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_b2.Designer.cs">
+      <DependentUpon>s_b2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_c3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_c3.Designer.cs">
+      <DependentUpon>s_c3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_d4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_d4.Designer.cs">
+      <DependentUpon>s_d4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_e5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_e5.Designer.cs">
+      <DependentUpon>s_e5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user_admin_Contol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_admin_Contol.Designer.cs">
+      <DependentUpon>user_admin_Contol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="verify_code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="verify_code.Designer.cs">
+      <DependentUpon>verify_code.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="admin_register.resx">
+      <DependentUpon>admin_register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="apartment house selection.resx">
+      <DependentUpon>apartment house selection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="choice.resx">
+      <DependentUpon>choice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="family_members_.resx">
+      <DependentUpon>family_members_.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home Registration.resx">
+      <DependentUpon>Home Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jakaria floor select owner.resx">
+      <DependentUpon>jakaria floor select owner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jakaria.resx">
+      <DependentUpon>jakaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jakaria_admin_dashboard.resx">
+      <DependentUpon>jakaria_admin_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jakaria_chatcs.resx">
+      <DependentUpon>Jakaria_chatcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jakaria_complaint.resx">
+      <DependentUpon>Jakaria_complaint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jakaria_complaint_admin.resx">
+      <DependentUpon>jakaria_complaint_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jakaria_family.resx">
+      <DependentUpon>Jakaria_family.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jakaria_guest.resx">
+      <DependentUpon>jakaria_guest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jakaria_utiliy_bill.resx">
+      <DependentUpon>jakaria_utiliy_bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="j_a1.resx">
+      <DependentUpon>j_a1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="j_b2.resx">
+      <DependentUpon>j_b2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="j_c3.resx">
+      <DependentUpon>j_c3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="j_d4.resx">
+      <DependentUpon>j_d4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="j_e5.resx">
+      <DependentUpon>j_e5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login Page.resx">
+      <DependentUpon>Login Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mahin_guest.resx">
+      <DependentUpon>mahin_guest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pramanik floor select owner.resx">
+      <DependentUpon>pramanik floor select owner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pramanik.resx">
+      <DependentUpon>pramanik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pramanik_admin_dashboard.resx">
+      <DependentUpon>pramanik_admin_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pramanik_chat.resx">
+      <DependentUpon>pramanik_chat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pramanik_complaint.resx">
+      <DependentUpon>pramanik_complaint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pramanik_complaint_admin.resx">
+      <DependentUpon>pramanik_complaint_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pramanik_family.resx">
+      <DependentUpon>pramanik_family.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pramanik_guest.resx">
+      <DependentUpon>pramanik_guest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pramanik_utiliy_bill.resx">
+      <DependentUpon>pramanik_utiliy_bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="p_a1.resx">
+      <DependentUpon>p_a1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="p_b2.resx">
+      <DependentUpon>p_b2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="p_c3.resx">
+      <DependentUpon>p_c3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="p_d4.resx">
+      <DependentUpon>p_d4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="p_e5.resx">
+      <DependentUpon>p_e5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sarker_admin_dashboard.resx">
+      <DependentUpon>sarker_admin_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sarker_admin_utiliti.resx">
+      <DependentUpon>sarker_admin_utiliti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sarker_chatt.resx">
+      <DependentUpon>sarker_chatt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sarker_complaint.resx">
+      <DependentUpon>sarker_complaint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sarker_complaint_admin.resx">
+      <DependentUpon>sarker_complaint_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sarker_floor_select_owner.resx">
+      <DependentUpon>sarker_floor_select_owner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sarker_guest.resx">
+      <DependentUpon>sarker_guest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sarker_utiliy_bill.resx">
+      <DependentUpon>sarker_utiliy_bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selection jakaria admin.resx">
+      <DependentUpon>selection jakaria admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selection pramanik admin.resx">
+      <DependentUpon>selection pramanik admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selection_sarker_admin.resx">
+      <DependentUpon>selection_sarker_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="swimming_doing.resx">
+      <DependentUpon>swimming_doing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="swimming_pool.resx">
+      <DependentUpon>swimming_pool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_a1.resx">
+      <DependentUpon>s_a1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_b2.resx">
+      <DependentUpon>s_b2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_c3.resx">
+      <DependentUpon>s_c3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_d4.resx">
+      <DependentUpon>s_d4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_e5.resx">
+      <DependentUpon>s_e5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_admin_Contol.resx">
+      <DependentUpon>user_admin_Contol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="verify_code.resx">
+      <DependentUpon>verify_code.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="loginDataSet.xsc">
+      <DependentUpon>loginDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="loginDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>loginDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="loginDataSet.xss">
+      <DependentUpon>loginDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="loginDataSet1.xsc">
+      <DependentUpon>loginDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="loginDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>loginDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="loginDataSet1.xss">
+      <DependentUpon>loginDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
